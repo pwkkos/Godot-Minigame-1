@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://rdexeqebgkan"
+path="res://.godot/imported/platform_slope_4x2x2_yellow.obj-7eb7fb1d322b3ec741fad136c62deec3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform_slope_4x2x2_yellow.obj-7eb7fb1d322b3ec741fad136c62deec3.mesh"]
+
+source_file="res://platformer assets/yellow/platform_slope_4x2x2_yellow.obj"
+dest_files=["res://.godot/imported/platform_slope_4x2x2_yellow.obj-7eb7fb1d322b3ec741fad136c62deec3.mesh", "res://.godot/imported/platform_slope_4x2x2_yellow.obj-7eb7fb1d322b3ec741fad136c62deec3.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

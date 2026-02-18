@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dr21emafvi37e"]
+
+[ext_resource type="Script" uid="uid://co36uleckxu3e" path="res://Scripts/hazard.gd" id="1_8eyky"]
+[ext_resource type="ArrayMesh" uid="uid://yra2rgp0e140" path="res://platformer assets/red/bomb_B_red.obj" id="2_dx1n7"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ci3js"]
+radius = 0.4944561
+
+[node name="Hazard_Bomb" type="Area3D"]
+script = ExtResource("1_8eyky")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_dx1n7")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_ci3js")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

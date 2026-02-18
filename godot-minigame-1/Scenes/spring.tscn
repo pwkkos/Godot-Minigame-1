@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3lksjdl28sdo"]
+
+[ext_resource type="ArrayMesh" uid="uid://b2eap72lyjfn" path="res://platformer assets/yellow/spring_pad_yellow.obj" id="2_1w5vy"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bix2b"]
+height = 0.8802414
+radius = 0.7529297
+
+[sub_resource type="GDScript" id="GDScript_nv7ci"]
+script/source = "extends Area3D
+
+
+func _on_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
+	var player := body as Player
+	if player != null:
+		player._hitSpring()
+"
+
+[node name="Spring" type="RigidBody3D"]
+collision_layer = 4
+collision_mask = 7
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_1w5vy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55736923, 0)
+shape = SubResource("CylinderShape3D_bix2b")
+
+[node name="Area3D" type="Area3D" parent="."]
+script = SubResource("GDScript_nv7ci")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.590683, 0)
+shape = SubResource("CylinderShape3D_bix2b")
+
+[connection signal="body_shape_entered" from="Area3D" to="Area3D" method="_on_body_shape_entered"]

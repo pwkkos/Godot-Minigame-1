@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://g3gkmb0a4ttn"
+path="res://.godot/imported/flag_B_yellow.obj-79c47147811c1de58140e2132c792193.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flag_B_yellow.obj-79c47147811c1de58140e2132c792193.mesh"]
+
+source_file="res://platformer assets/yellow/flag_B_yellow.obj"
+dest_files=["res://.godot/imported/flag_B_yellow.obj-79c47147811c1de58140e2132c792193.mesh", "res://.godot/imported/flag_B_yellow.obj-79c47147811c1de58140e2132c792193.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

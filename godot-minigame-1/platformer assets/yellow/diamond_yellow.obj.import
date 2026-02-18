@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://x88bytcfm0bc"
+path="res://.godot/imported/diamond_yellow.obj-df358be72f71d9c505aecdd21cea983e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/diamond_yellow.obj-df358be72f71d9c505aecdd21cea983e.mesh"]
+
+source_file="res://platformer assets/yellow/diamond_yellow.obj"
+dest_files=["res://.godot/imported/diamond_yellow.obj-df358be72f71d9c505aecdd21cea983e.mesh", "res://.godot/imported/diamond_yellow.obj-df358be72f71d9c505aecdd21cea983e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://bktcwfg8tck01"]
+
+[ext_resource type="PackedScene" uid="uid://g0ikyr1cve2h" path="res://Scenes/player.tscn" id="1_kln2b"]
+[ext_resource type="PackedScene" uid="uid://cg487x3wldk2q" path="res://Scenes/level.tscn" id="2_kln2b"]
+[ext_resource type="Script" uid="uid://c78ji3omfsv77" path="res://Scripts/pointsText.gd" id="4_rgh2o"]
+
+[node name="Main Scene" type="Node3D"]
+
+[node name="UI" type="ColorRect" parent="."]
+offset_right = 302.0
+offset_bottom = 89.0
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 0.32941177)
+
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
+layout_mode = 0
+offset_right = 175.0
+offset_bottom = 89.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+
+[node name="PointsText" type="Label" parent="UI/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "points"
+
+[node name="space" type="Label" parent="UI/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "  "
+
+[node name="PointsNum" type="Label" parent="UI/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "##"
+script = ExtResource("4_rgh2o")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.9408867, 0, -0.33872154, 0.26964808, 0.6051968, 0.74901736, 0.20499314, -0.796076, 0.5694215, 0, 10, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_kln2b")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.5906524, 1.7738466, 5.118198)
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.91969824, 0.39262608, 0, -0.39262608, 0.91969824, -0.31240737, 2.45037, 3.2369843)
+
+[node name="Level" parent="." instance=ExtResource("2_kln2b")]

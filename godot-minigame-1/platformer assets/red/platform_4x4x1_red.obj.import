@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://de7dl0khdakbc"
+path="res://.godot/imported/platform_4x4x1_red.obj-a9e1530987e27015dc681f6514b0f272.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform_4x4x1_red.obj-a9e1530987e27015dc681f6514b0f272.mesh"]
+
+source_file="res://platformer assets/red/platform_4x4x1_red.obj"
+dest_files=["res://.godot/imported/platform_4x4x1_red.obj-a9e1530987e27015dc681f6514b0f272.mesh", "res://.godot/imported/platform_4x4x1_red.obj-a9e1530987e27015dc681f6514b0f272.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

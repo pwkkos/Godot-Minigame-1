@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=3 uid="uid://cg487x3wldk2q"]
+
+[ext_resource type="PackedScene" uid="uid://cnrckw8wltntv" path="res://Scenes/hazard_fall.tscn" id="1_k5f4k"]
+[ext_resource type="PackedScene" uid="uid://m11kfdlqnjon" path="res://Scenes/platform.tscn" id="1_tumq0"]
+[ext_resource type="PackedScene" uid="uid://dr21emafvi37e" path="res://Scenes/hazard_bomb.tscn" id="3_6phgx"]
+[ext_resource type="PackedScene" uid="uid://dfucc2hcldhn7" path="res://Scenes/coin.tscn" id="4_81xng"]
+[ext_resource type="PackedScene" uid="uid://b3lksjdl28sdo" path="res://Scenes/spring.tscn" id="5_wqkje"]
+
+[node name="Level" type="Node3D"]
+
+[node name="Hazard_FallZone" parent="." instance=ExtResource("1_k5f4k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, -3, 4)
+
+[node name="Platforms" type="Node3D" parent="."]
+
+[node name="Platform30" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.994326, 4, 3)
+
+[node name="Platform31" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.994326, 4, 7)
+
+[node name="Platform32" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.991488, 4, 5)
+
+[node name="Platform26" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.977303, 4, 3)
+
+[node name="Platform27" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.977303, 4, 7)
+
+[node name="Platform28" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.974465, 4, 5)
+
+[node name="Platform22" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.982977, 4, 3)
+
+[node name="Platform23" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.982977, 4, 7)
+
+[node name="Platform24" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.98014, 4, 5)
+
+[node name="Platform18" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.988651, 4, 3)
+
+[node name="Platform19" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.988651, 4, 7)
+
+[node name="Platform20" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.985814, 4, 5)
+
+[node name="Platform14" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.997163, 0, 3)
+
+[node name="Platform15" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.997163, 0, 7)
+
+[node name="Platform16" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9943256, 0, 5)
+
+[node name="Platform10" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+
+[node name="Platform11" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7)
+
+[node name="Platform12" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.997163, 0, 5)
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 7)
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 7)
+
+[node name="Platform2" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9971628, 0, 5)
+
+[node name="Platform" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 7)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("1_tumq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 5)
+
+[node name="Hazards" type="Node3D" parent="."]
+
+[node name="Hazard_Bomb3" parent="Hazards" instance=ExtResource("3_6phgx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3666618, 1.3238971, 5.657507)
+
+[node name="Hazard_Bomb2" parent="Hazards" instance=ExtResource("3_6phgx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.537668, 5.4028964, 5.125016)
+
+[node name="Hazard_Bomb" parent="Hazards" instance=ExtResource("3_6phgx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8101406, 1.4059553, 2.8385887)
+
+[node name="Coins" type="Node3D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource("4_81xng")]
+transform = Transform3D(0.5877712, 0, -0.80902725, 0, 1, 0, 0.80902725, 0, 0.5877712, 15.512747, 5.462118, 3.4387212)
+
+[node name="Springs" type="Node3D" parent="."]
+
+[node name="Spring" parent="Springs" instance=ExtResource("5_wqkje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, 5)

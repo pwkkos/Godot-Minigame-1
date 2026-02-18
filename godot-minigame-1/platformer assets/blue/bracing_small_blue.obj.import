@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dciw42yahdtxk"
+path="res://.godot/imported/bracing_small_blue.obj-312403b9ce9a296886013bb3bddd218d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bracing_small_blue.obj-312403b9ce9a296886013bb3bddd218d.mesh"]
+
+source_file="res://platformer assets/blue/bracing_small_blue.obj"
+dest_files=["res://.godot/imported/bracing_small_blue.obj-312403b9ce9a296886013bb3bddd218d.mesh", "res://.godot/imported/bracing_small_blue.obj-312403b9ce9a296886013bb3bddd218d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

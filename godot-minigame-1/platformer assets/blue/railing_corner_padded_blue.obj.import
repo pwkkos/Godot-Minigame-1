@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jnxwyi64mgin"
+path="res://.godot/imported/railing_corner_padded_blue.obj-2fa3a1db4ba77803b8280e74d239b419.mesh"
+
+[deps]
+
+files=["res://.godot/imported/railing_corner_padded_blue.obj-2fa3a1db4ba77803b8280e74d239b419.mesh"]
+
+source_file="res://platformer assets/blue/railing_corner_padded_blue.obj"
+dest_files=["res://.godot/imported/railing_corner_padded_blue.obj-2fa3a1db4ba77803b8280e74d239b419.mesh", "res://.godot/imported/railing_corner_padded_blue.obj-2fa3a1db4ba77803b8280e74d239b419.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

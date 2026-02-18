@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://m11kfdlqnjon"]
+
+[ext_resource type="ArrayMesh" uid="uid://b4sqfaroesvap" path="res://platformer assets/blue/platform_2x2x1_blue.obj" id="1_o20dk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wtyfn"]
+size = Vector3(1.9191284, 1.0234375, 2.1237793)
+
+[node name="Platform" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+collision_layer = 2
+collision_mask = 5
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5187378, 0)
+shape = SubResource("BoxShape3D_wtyfn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_o20dk")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfucc2hcldhn7"]
+
+[ext_resource type="ArrayMesh" uid="uid://cguwankyjjjlp" path="res://platformer assets/yellow/star_yellow.obj" id="1_2qo34"]
+[ext_resource type="Script" uid="uid://chlhf1p5qhye0" path="res://Scripts/coin.gd" id="1_jgi06"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sgwqp"]
+height = 0.31781006
+radius = 0.60839844
+
+[node name="Coin" type="Area3D"]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_jgi06")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_2qo34")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -1.0364913e-09, 0.023712158)
+shape = SubResource("CylinderShape3D_sgwqp")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

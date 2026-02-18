@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://g0ikyr1cve2h"]
+
+[ext_resource type="Script" uid="uid://1qjelrxa7t2a" path="res://Scripts/player.gd" id="1_v0iea"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r150o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v0iea"]
+albedo_color = Color(0, 0.7705025, 0.100892015, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r150o"]
+
+[node name="Player" type="CharacterBody3D"]
+collision_mask = 6
+script = ExtResource("1_v0iea")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_r150o")
+surface_material_override/0 = SubResource("StandardMaterial3D_v0iea")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_r150o")

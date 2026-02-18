@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnrckw8wltntv"]
+
+[ext_resource type="Script" uid="uid://co36uleckxu3e" path="res://Scripts/hazard.gd" id="1_lj1l0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rnyj4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lj1l0"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 0.2627451)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_51ikd"]
+size = Vector3(100.12152, 1, 100.20215)
+
+[node name="Hazard_FallZone" type="Area3D"]
+collision_layer = 4
+script = ExtResource("1_lj1l0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0)
+mesh = SubResource("BoxMesh_rnyj4")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_lj1l0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.17236328)
+shape = SubResource("BoxShape3D_51ikd")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
