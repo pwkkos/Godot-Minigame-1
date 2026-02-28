@@ -44,7 +44,7 @@ script = ExtResource("4_rgh2o")
 transform = Transform3D(0.9408867, 0, -0.33872154, 0.26964808, 0.6051968, 0.74901736, 0.20499314, -0.796076, 0.5694215, 0, 10, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_kln2b")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.5906524, 1.7738466, 5.118198)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.40850538, 1.7478452, 6.397123)
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 0.91969824, 0.39262608, 0, -0.39262608, 0.91969824, -0.31240737, 2.45037, 3.2369843)
